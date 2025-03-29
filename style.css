@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+.login-box,
+.register-box,
+.panel {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.komunikat {
+    background-color: #ffe6e6;
+    color: #c0392b;
+    border-left: 4px solid #e74c3c;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+td form {
+    display: inline;
+}
+
+td input[type="text"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 6px;
+    font-size: 13px;
+}
+
+td label {
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+td a {
+    color: red;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.filter-form {
+    margin: 20px 0;
+}
+
+    .filter-form select {
+        width: auto;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .login-box,
+    .register-box,
+    .panel {
+        padding: 20px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    td {
+        padding: 10px 0;
+        border: none;
+        position: relative;
+    }
+
+        td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+}
